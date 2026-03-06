@@ -10,70 +10,75 @@ class NumbersView extends StatelessWidget {
       englishMeaning: 'One',
       italianMeaning: 'Uno',
       color: Colors.green,
-      image: 'assests/numbers/one.png',
+      image: 'assets/numbers/images/one.png',
+      sound:
+          'numbers/sounds/una.mp3', // تعديل المسار ليتطابق مع assets/numbers/sounds/
     ),
     ItemModel(
       englishMeaning: 'Two',
       italianMeaning: 'Due',
       color: Colors.orange,
-      image: 'assests/numbers/two.png',
+      image: 'assets/numbers/images/two.png',
+      sound: 'numbers/sounds/due.mp3',
     ),
-
     ItemModel(
       englishMeaning: 'Three',
       italianMeaning: 'Tre',
       color: Colors.red,
-      image: 'assests/numbers/three.png',
+      image: 'assets/numbers/images/three.png',
+      sound: 'numbers/sounds/tre.mp3',
     ),
-
     ItemModel(
       englishMeaning: 'Four',
       italianMeaning: 'Quattro',
       color: Colors.green,
-      image: 'assests/numbers/four.png',
+      image: 'assets/numbers/images/four.png',
+      sound: 'numbers/sounds/quattro.mp3',
     ),
-
     ItemModel(
       englishMeaning: 'Five',
       italianMeaning: 'Cinque',
       color: Colors.orange,
-      image: 'assests/numbers/five.png',
+      image: 'assets/numbers/images/five.png',
+      sound: 'numbers/sounds/cinque.mp3',
     ),
-
     ItemModel(
       englishMeaning: 'Six',
       italianMeaning: 'Sei',
       color: Colors.red,
-      image: 'assests/numbers/six.png',
+      image: 'assets/numbers/images/six.png',
+      sound: 'numbers/sounds/sei.mp3',
     ),
     ItemModel(
       englishMeaning: 'Seven',
       italianMeaning: 'Sette',
       color: Colors.orange,
-      image: 'assests/numbers/seven.png',
+      image: 'assets/numbers/images/seven.png',
+      sound: 'numbers/sounds/Sette.mp3',
     ),
-
     ItemModel(
       englishMeaning: 'Eight',
       italianMeaning: 'Otto',
       color: Colors.red,
-      image: 'assests/numbers/eight.png',
+      image: 'assets/numbers/images/eight.png',
+      sound: 'numbers/sounds/otto.mp3',
     ),
-
     ItemModel(
       englishMeaning: 'Nine',
       italianMeaning: 'Nove',
       color: Colors.green,
-      image: 'assests/numbers/nine.png',
+      image: 'assets/numbers/images/nine.png',
+      sound: 'numbers/sounds/nove.mp3',
     ),
-
     ItemModel(
       englishMeaning: 'Ten',
       italianMeaning: 'Dieci',
       color: Colors.green,
-      image: 'assests/numbers/ten.png',
+      image: 'assets/numbers/images/ten.png',
+      sound: 'numbers/sounds/dieci.mp3',
     ),
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

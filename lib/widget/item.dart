@@ -39,7 +39,9 @@ class Item extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(right: 16.0),
             child: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                model.PlaySound();
+              },
               icon: Icon(Icons.play_arrow_sharp, size: 24),
             ),
           ),

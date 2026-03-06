@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:quick_speak/model/category_model.dart';
 
 class category extends StatelessWidget {
-  const category({super.key, required this.model,required this.onTap});
+  category({super.key, required this.model,required this.onTap});
 
   final CategoryModel model;
-  final Function()? onTap;
+   Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
