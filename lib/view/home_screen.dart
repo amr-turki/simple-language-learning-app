@@ -1,6 +1,9 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:quick_speak/model/category_model.dart';
+import 'package:quick_speak/view/Phrases_view.dart';
+import 'package:quick_speak/view/color_view.dart';
+import 'package:quick_speak/view/family_view.dart';
+import 'package:quick_speak/view/numbers_view.dart';
 import 'package:quick_speak/widget/category.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -27,9 +30,60 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       body: Column(
-        children: categoryModels.map((e) {
-          return category(model: e);
-        }).toList(),
+        children: [
+          category(
+            model: categoryModels[0],
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return NumbersView();
+                  },
+                ),
+              );
+            },
+          ),
+          category(
+            model: categoryModels[1],
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return FamilyView();
+                  },
+                ),
+              );
+            },
+          ),
+          category(
+            model: categoryModels[2],
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return ColorView();
+                  },
+                ),
+              );
+            },
+          ),
+          category(
+            model: categoryModels[3],
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return PhrasesView();
+                  },
+                ),
+              );
+            },
+          ),
+        ],
       ),
     );
   }
