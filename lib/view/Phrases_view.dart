@@ -9,7 +9,7 @@ class PhrasesView extends StatelessWidget {
     ItemModel(
       englishMeaning: 'dont forget to subscribe',
       italianMeaning: 'non dimenticare di iscriverti',
-      color: Color(0xFF74B9FF), // اللون الأزرق لشاشة الجمل
+      color: Color(0xFF74B9FF),
       sound: 'phrases/sounds/subscribe.mp3',
     ),
     ItemModel(
