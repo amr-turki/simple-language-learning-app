@@ -1,23 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:quick_speak/model/item_model.dart';
 
-class Item extends StatelessWidget {
-  const Item({super.key, required this.model});
+class PharseITem extends StatelessWidget {
+  const PharseITem({super.key, required this.model});
 
   final ItemModel model;
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 75,
       color: model.color,
       child: Row(
         children: [
-          Container(
-            height: 45,
-            width: 75,
-            color: Colors.white,
-
-            child: Image(image: AssetImage(model.image!)),
-          ),
           Padding(
             padding: const EdgeInsets.only(left: 16.0),
             child: Column(
